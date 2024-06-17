@@ -1,0 +1,862 @@
+/*=================== SCREEN SIZES ===================*/
+/*=================== COLORS ===================*/
+/*=================== FONT ===================*/
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+header {
+  background: url("../imagens/bg_desktop.png") top center no-repeat;
+  color: #fff;
+  padding: 10px;
+  height: 567px;
+}
+
+header .content .box-text h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  padding-top: 250px;
+}
+
+main {
+  margin-top: 15%;
+}
+
+.section-book {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: translateY(30vh);
+  z-index: 4;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  box-shadow: 5px 8.66px 9px 1px rgba(0, 0, 0, 0.03);
+  max-width: 1130px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.section-book {
+  transform: translateY(-33vh);
+}
+
+@media only screen and (min-width:1199px) {
+  header .content .box-text h1 {
+    padding-top: 150px;
+  }
+}
+.section-book .section-title-book {
+  transform: translateY(-60px);
+  margin: 0 auto;
+  max-width: 1122px;
+}
+.section-book .section-title-book h3 {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media only screen and (min-width:1200px) {
+  .section-book .section-title-book h3 {
+    text-align: left;
+  }
+}
+.section-book .section-complet {
+  display: flex;
+  justify-content: center;
+}
+.section-book .scheduling-travel {
+  transform: translateY(-31px);
+}
+.section-book .buy-checked {
+  display: flex;
+  gap: 5px;
+  border-bottom: 3px solid #D9D9D9;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width:992px) {
+  .section-book .buy-checked {
+    gap: 65px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.section-book .buy-checked .buy {
+  color: #FF7100;
+  text-decoration: underline;
+}
+.section-book .buy-checked h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.section-book .plane-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-book form {
+  margin: 25px 0;
+}
+.section-book form .part-superior .labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width:992px) {
+  .section-book form .part-superior .labels {
+    gap: 160px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.section-book form .part-superior .labels label {
+  display: flex;
+}
+.section-book form .part-superior .labels label p {
+  margin: 0;
+  font-size: 1rem;
+  color: #4E4E4E;
+}
+.section-book form .part-inferior .labels {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width:1200px) {
+  .section-book form .part-inferior .labels {
+    align-items: flex-start;
+    gap: 65px;
+    flex-direction: row;
+  }
+}
+.section-book form .part-inferior .labels label input,
+.section-book form .part-inferior .labels label select {
+  width: 241px;
+  height: 32px;
+}
+.section-book form .part-inferior .button-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-book form .part-inferior .button-numbers input {
+  width: 241px;
+  height: 32px;
+}
+@media only screen and (min-width:992px) {
+  .section-book form .part-inferior .button-numbers {
+    gap: 65px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+.section-book form label ::-moz-placeholder {
+  color: #4E4E4E;
+  font-size: 1rem;
+}
+.section-book form label ::placeholder {
+  color: #4E4E4E;
+  font-size: 1rem;
+}
+.section-book form label p {
+  margin: 6px 0;
+  color: #4E4E4E;
+  font-size: 1.2rem;
+}
+.section-book form button {
+  background-color: #FF7100;
+  color: #fff;
+  padding: 11px 75px;
+  border-radius: 7px;
+  border: none;
+  transition: background 350ms ease;
+  pointer-events: all;
+  font-size: 1.05rem;
+}
+.section-book form button:hover {
+  background: #F28F24;
+}
+
+@media only screen and (min-width:992px) {
+  .img-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    transform: translateX(18vh);
+  }
+}
+
+.section-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100% 0 0 0;
+}
+
+@media only screen and (max-width:479px) {
+
+  header .content .box-text h1 {
+    padding-top: 50px;
+  }
+
+}
+
+
+@media only screen and (min-width:480px) {
+  .section-alert {
+    padding: 50% 0 0 0;
+  }
+  header .content .box-text h1 {
+    padding-top: 100px;
+  }
+
+}
+
+@media only screen and (min-width:768px) {
+  .section-alert {
+    padding: 50% 0 0 0;
+  }
+  header .content .box-text h1 {
+    padding-top: 125px;
+  }
+
+
+}
+@media only screen and (min-width:1200px) {
+  .section-alert {
+    padding: 15% 0 0 0;
+  }
+}
+
+@media only screen and (min-width:1728px){
+  header {
+    width: 1728px;
+    height: 567px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-alert .alert {
+  background-color: #FFF8E1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 103px;
+  border-radius: 9px;
+  flex-direction: column;
+}
+@media only screen and (min-width:992px) {
+  .section-alert .alert {
+    flex-direction: row;
+  }
+}
+.section-alert .alert .alert-text {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.section-alert .alert .alert-text p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+@media only screen and (min-width:992px) {
+  .section-alert .alert .alert-text p {
+    text-align: left;
+  }
+}
+
+.section-tickets {
+  margin-top: 36px;
+}
+.section-tickets .title-section-tickets {
+  margin: 11px 0;
+}
+.section-tickets .title-section-tickets .container {
+  margin: 0 auto;
+  max-width: 1127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width:992px) {
+  .section-tickets .title-section-tickets .container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.section-tickets .container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 40px;
+}
+@media only screen and (min-width:768px) {
+  .section-tickets .container {
+    padding: 0 15px;
+  }
+}
+.section-tickets .container .left-content h3 {
+  font-weight: 400;
+  margin: 0 0 5px 0;
+}
+@media only screen and (max-width:1199px) {
+  .section-tickets .container .left-content h3 {
+    text-align: center;
+  }
+}
+.section-tickets .container .left-content p {
+  font-weight: 300;
+  margin: 0 0 0 0;
+}
+@media only screen and (max-width:991px) {
+  .section-tickets .container .left-content p {
+    text-align: center;
+  }
+}
+.section-tickets .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.section-tickets .list .post-countries {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width:480px) {
+  .section-tickets .list .post-countries {
+    flex-direction: row;
+  }
+}
+.section-tickets .list .post-countries .box-img {
+  display: block;
+  overflow: hidden;
+  transition: transform 350ms;
+}
+.section-tickets .list .post-countries .box-img img {
+  transition: transform 350ms;
+  height: 100%;
+}
+.section-tickets .list .post-countries .box-img img:hover {
+  transform: scale(1.05);
+}
+.section-tickets .list .post-countries .box-text {
+  background-color: #F5F8FF;
+  padding: 20px;
+  text-align: center;
+}
+@media only screen and (min-width:480px) {
+  .section-tickets .list .post-countries .box-text {
+    text-align: left;
+  }
+}
+@media only screen and (min-width:992px) {
+  .section-tickets .list .post-countries .box-text {
+    padding: 25px 101px 25px 20px;
+  }
+}
+.section-tickets .list .post-countries .box-text h3 {
+  font-weight: 500;
+}
+.section-tickets .list .post-countries .box-text .country-duration {
+  display: flex;
+  gap: 25px;
+}
+@media only screen and (min-width:480px) {
+  .section-tickets .list .post-countries .box-text .price {
+    text-align: right;
+  }
+}
+
+.section-discover {
+  margin-top: 47px;
+}
+.section-discover .section-title-discovery {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+.section-discover .section-title-discovery h3 {
+  font-size: 1rem;
+  color: #4E4E4E;
+  font-weight: 300;
+  text-align: center;
+}
+@media only screen and (min-width:1200px) {
+  .section-discover .section-title-discovery h3 {
+    text-align: left;
+  }
+}
+.section-discover .list {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+.section-discover .list .post-discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-discover .list .post-discover .box-img {
+  display: block;
+  overflow: hidden;
+  transition: transform 350ms;
+}
+.section-discover .list .post-discover .box-img img {
+  display: block;
+  transition: transform 350ms;
+  height: 100%;
+}
+.section-discover .list .post-discover .box-img img:hover {
+  transform: scale(1.05);
+}
+.section-discover .list .post-discover .box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  box-shadow: 5px 8.66px 9px 1px rgba(0, 0, 0, 0.03);
+  padding: 23px 0 43px 0;
+  width: 100%;
+  transform: translateY(-1px);
+}
+.section-discover .list .post-discover .box-text .text {
+  margin: 0 0 0 30px;
+}
+.section-discover .list .post-discover .box-text .text h3 {
+  margin: 0 0 21px 0;
+  color: #727171;
+}
+.section-discover .list .post-discover .box-text .text p {
+  margin: 0;
+  max-width: 248px;
+  color: #A4A4A4;
+}
+
+footer {
+  background-color: #C2CFF0;
+  margin-top: 19px;
+  padding-top: 25px;
+}
+footer .menu-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width:992px) {
+  footer .menu-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+}
+footer .menu-footer ul {
+  padding: 0;
+}
+footer .menu-footer ul li {
+  list-style-type: none;
+  color: #727171;
+}
+footer .menu-footer .title {
+  color: #4E4E4E;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+footer .menu-footer .left {
+  text-align: center;
+}
+@media only screen and (min-width:992px) {
+  footer .menu-footer .left {
+    text-align: left;
+  }
+}
+footer .menu-footer .center {
+  text-align: center;
+}
+footer .menu-footer .right {
+  text-align: center;
+}
+@media only screen and (min-width:992px) {
+  footer .menu-footer .right {
+    text-align: right;
+  }
+}
+footer .follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1258px;
+  flex-direction: column;
+}
+@media only screen and (min-width:480px) {
+  footer .follow {
+    gap: 25px;
+  }
+}
+@media only screen and (min-width:992px) {
+  footer .follow {
+    flex-direction: row;
+    gap: 266px;
+  }
+}
+footer .follow .div,
+footer .follow .download {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .follow .div p,
+footer .follow .download p {
+  color: #4E4E4E;
+  font-weight: 500;
+}
+footer .follow .download {
+  padding: 0 0 30px 0;
+}
+@media only screen and (min-width:992px) {
+  footer .follow .download {
+    padding: 0;
+  }
+}
+footer .follow .img-stores {
+  display: flex;
+  align-items: flex-start;
+}
+footer .follow p {
+  margin: 0;
+}
+footer .follow ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+footer .follow ul li {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
+
+
+/* CSS Menu Hamburguer */
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 a.logo {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+
+}
+
+h1 a:hover.logo {
+  color: #fff;
+  font-weight: 600;
+  color: #D4D4D4;
+}
+
+span.logob {
+  font-weight: 600;
+}
+
+.topmenu {
+  overflow: hidden;
+}
+
+.topmenu a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topmenu a:hover {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: #ff7100 4px solid;
+}
+
+.topmenu a.active {
+  color: #fff;
+  border-bottom: #ff7100 solid 4px;
+}
+
+.topmenu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .topmenu a:not(:first-child) {display: none;}
+  .topmenu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .topmenu.responsive {position: relative;}
+  .topmenu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topmenu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Modal Login */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #F28F24;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #F28F24;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 12px 0;
+  position: relative;
+}
+
+.titulo_form {
+  color: #F28F24;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  font-size: 12px;
+  color: #F28F24;
+}
+
+a.btn_text {
+  font-size: 12px;
+  color: #F28F24;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #F28F24;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* CSS do banner */
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+  position: relative;
+  padding: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* CSS para o menu */
+
+.air-algerie {
+  gap: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

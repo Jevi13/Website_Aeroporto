@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./imagens/plane.png">
+    
+    <title>Avaliação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <h1><a href="#" class="logo"><span class="logob">U</span>travel</a></h1>
+        <!-- Menu de navegação -->
+        <nav class="topmenu" id="myTopmenu">
+            <b class="log-in"><a href="#" style="width:auto;">Login</a></b>
+            <a href="#">Help</a>
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
+            <a href="#">EN></a>
+
+            <a id="hambmenu" class=" icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </nav>
+        <div class="content">
+            <div class="box-text">
+                <h1>we are here for you. Worldwide</h1>
+            </div>
+        </div>
+    </header>
+
+
+          <!-- Login -->
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./public/avatar2.png" alt="Avatar" class="avatar">
+                </div>
+        
+                <div class="container">
+                    <label for="uname"><b class="titulo_form">Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                    <label for="psw"><b class="titulo_form">Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> <span class="titulo_form">Remember me</span>
+                    </label>
+                </div>
+        
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#" class="btn_text">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+    
+    <main>
+        <section class="section-book">
+            <div class="section-title-book">
+                <h3>Book now!</h3>
+            </div>
+            <div class="section-complet">
+                <div class="scheduling-travel">
+                    <div class="buy-checked">
+                        <h3 class="buy">Buy Tickets</h3>
+                        <h3 class="check">Check your flight status</h3>
+                    </div>
+
+                    <div class="plane-form">
+                        <img src="./imagens/plane.png" alt="plane">
+                        <form action="#">
+                            <div class="part-superior">
+                            <div class="labels">
+                                    <label>
+                                        <input type="radio">
+                                        <p>One way</p>
+                                    </label>
+                                    <label>
+                                        <input type="radio">
+                                        <p>Round trip</p>
+                                    </label><label>
+                                        <input type="radio">
+                                        <p>Multi-city</p>
+                                    </label>
+                            </div>
+                            </div>
+
+                            <div class="part-inferior">
+                                <div class="labels">
+                                    <label>
+                                        <p>From</p>
+                                        <select>
+                                            <option disabled>Select Departure...</option>
+                                            <option value="brazil">Brasil</option>
+                                            <option value="estados-unidos">Estados unidos</option>
+                                            <option value="london">London</option>
+                                            <option value="paris">Paris</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>To</p>
+                                        <select>
+                                            <option disabled>Select Departure...</option>
+                                            <option value="brazil">Brasil</option>
+                                            <option value="estados-unidos">Estados unidos</option>
+                                            <option value="london">London</option>
+                                            <option value="paris">Paris</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>Departure date</p>
+                                        <input type="date" placeholder="dd/mm/yy">
+                                    </label>
+                                    
+                                </div>
+                                <div class="button-numbers">
+                                    <label>
+                                        <p>Passengers</p>
+                                        <input type="number" placeholder="2 adult">
+                                    </label>
+                                    <button type="submit">Book now!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="img-logo">
+                        <img src="./imagens/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-alert">
+            <div class="alert">
+                <div class="alert-img">
+                    <img src="./imagens/Vector.png" alt="Cuidado">
+                </div>
+                <div class="alert-text">
+                    <p>Active travel alert</p>
+                    <p>There is a travel warning issued by the government due to the coronavirus epidemic (COVID-19). <a href="more">More details</a></p>
+                </div>
+            </div>
+        </section>
+
+    <section class="banner">
+            <!-- Container for the image gallery -->
+        
+            <div class="gallery" >
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                    <img src="public/img_woods_wide.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="public/img_5terre_wide.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="public/img_mountains_wide.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="public/img_lights_wide.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="public/img_nature_wide.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="public/img_snow_wide.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="public/img_woods.jpg" style="width:100%"  alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="public/img_5terre.jpg" style="width:100%"  alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="public/img_mountains.jpg" style="width:100%"  alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="public/img_lights.jpg" style="width:100%"  alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="public/img_nature.jpg" style="width:100%"  alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"  src="public/img_snow.jpg" style="width:100%"  alt="Snowy Mountains">
+                </div>
+            </div>
+  
+    
+    </section>
+
+        <section class="section-tickets">
+            <div class="title-section-tickets">
+                <div class="container">
+                    <div class="left-content">
+                        <h3>Traveling from your location</h3>
+                        <p>round trip - one passenger</p>
+                    </div>
+
+                    <div class="right-content">
+                        <p>Explore more destinations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="list">
+                <div class="post-countries">
+                    <div class="box-img">
+                        <img class="img-responsive" src="./imagens/Rectangle 52.png" alt="post-countries" width="235" height="171">
+                    </div>
+                    
+                    <div class="box-text">
+                        <h3>London</h3>
+                        <p>Apr 5-8</p>
+                        <div class="country-duration">
+                            <p>Direct flight</p>
+                            <p>3h 15 min</p>
+                        </div>
+                        <img src="./imagens/image 2.png" alt="Image Country" width="51" height="23">
+                        <p class="price">€ 35</p>
+                    </div>
+                </div>  
+                <div class="post-countries">
+                    <div class="box-img">
+                        <img class="img-responsive" src="./imagens/Rectangle 54.png" alt="post-countries" width="235" height="171">
+                    </div>
+                    
+                    <div class="box-text">
+                        <h3>Rome</h3>
+                        <p>Oct 5-8</p>
+                        <div class="country-duration">
+                            <p>Direct flight</p>
+                            <p>3h 15 min</p>
+                        </div>
+                        <img src="./imagens/image 4.png" alt="Image Country" width="51" height="23">
+                        <p class="price">€ 45</p>
+                    </div>
+                </div> 
+                <div class="post-countries">
+                    <div class="box-img">
+                        <img class="img-responsive" src="./imagens/Rectangle 53.png" alt="post-countries" width="235" height="171">
+                    </div>
+                    
+                    <div class="box-text">
+                        <h3>Madrid</h3>
+                        <p>Oct 5-8</p>
+                        <div class="country-duration">
+                            <p>Direct flight</p>
+                            <p>3h 15 min</p>
+                        </div>
+                        <img src="./imagens/image 6.png" alt="Image Country" width="51" height="23">
+                        <p class="price">€ 25</p>
+                    </div>
+                </div> 
+                <div class="post-countries">
+                    <div class="box-img">
+                        <img class="img-responsive" src="./imagens/Rectangle 55.png" alt="post-countries" width="235" height="171">
+                    </div>
+                    
+                    <div class="box-text">
+                        <h3>Paris</h3>
+                        <p>Oct 5-8</p>
+                        <div class="country-duration">
+                            <p>Direct flight</p>
+                            <p>3h 15 min</p>
+                        </div>
+                        <img src="./imagens/image 2.png" alt="Image Country" width="51" height="23">
+                        <p class="price">€ 55</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="section-discover" data-aos="fade-down" data-aos-duration="1000">
+            <div class="section-title-discovery">
+                <h3>Discover</h3>
+            </div>
+            <div class="container">
+                <div class="list">
+                    <div class="post-discover">
+                        <div class="box-img">
+                            <img class="img-responsive" src="./imagens/Rectangle 63.png" alt="post-countries" width="360" height="165">
+                        </div>
+                        
+                        <div class="box-text">
+                            <div class="text">
+                                <h3>Latest travel restrictions</h3>
+                                <p>We provide information on the entry requirements for all countries so you can plan your flight smoothly</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="post-discover">
+                        <div class="box-img">
+                            <img class="img-responsive" src="./imagens/Rectangle 64.png" alt="post-countries" width="360" height="165">
+                        </div>
+                        
+                        <div class="box-text"> 
+                            <div class="text">
+                                <h3>Install our mobile app</h3>
+                                <p>Our mobile app provides real-time information when you are at the airport</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="post-discover">
+                        <div class="box-img">
+                            <img class="img-responsive" src="./imagens/Rectangle 65.png" alt="post-countries" width="360" height="165">
+                        </div>
+                        
+                        <div class="box-text">
+                            <div class="text">
+                                <h3>The most beautiful destinations</h3>
+                                <p>Have you ever considered visiting Easter Island or Alaska? These are the most unique destinations in 2022</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer data-aos="fade-up">
+        <div class="menu-footer">
+            <ul class="left">
+                <li class="title">Passengers</li>
+                <li>Airlines</li>
+                <li>Park</li>
+                <li>Security Wait Times</li>
+                <li>Map</li>
+                <li>Shop & Dine</li>
+            </ul>
+            <ul class="center">
+                <li class="title">Business and Community</li>
+                <li>About us</li>
+                <li>Career</li>
+            </ul>
+            <ul class="right">
+                <li class="title">General</li>
+                <li>Report Property</li>
+                <li>Sign Up</li>
+                <li>Contact us</li>
+                <li>Newsroom</li>
+            </ul>
+        </div>
+        <div class="class-social">
+            <div class="follow">
+                <div class="div">
+                    <p>Follow us</p>
+                        <ul class="list-network">
+                            <li>
+                                <img src="./imagens/Vector (5).png" alt="facebook">
+                            </li>
+                            <li>
+                                <img src="./imagens/Vector (4).png" alt="instagram">
+                            </li>
+                            <li>
+                                <img src="./imagens/Vector (3).png" alt="twitter">
+                            </li>
+                            <li>
+                                <img src="./imagens/Vector (2).png" alt="youtube">
+                            </li>
+                            <li>
+                                <img src="./imagens/Vector (1).png" alt="linkedin">
+                            </li>
+                        </ul>
+                    </div>
+                <div class="download">
+                    <p>Download the Utravel app</p>
+                    <div class="img-stores">
+                        <a href="https://apps.apple.com/br/app/apple-store/id375380948" target="_blank">
+                            <img src="./imagens/appstore.png" alt="apple store">
+                        </a>
+                        <a href="https://play.google.com/store/apps?hl=pt_BR&gl=US">
+                            <img src="./imagens/googleplay.png" alt="googleplay">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
